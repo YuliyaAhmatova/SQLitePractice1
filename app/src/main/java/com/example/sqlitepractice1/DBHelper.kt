@@ -75,7 +75,7 @@ class DBHelper(context: Context) :
         contentValues.put(KEY_NAME, product.productName)
         contentValues.put(KEY_WEIGHT, product.productWeight)
         contentValues.put(KEY_COST, product.productCost)
-        db.update(TABLE_NAME, contentValues, "name=" + product.productName, null)
+        db.update(TABLE_NAME, contentValues, "name=?", arrayOf(product.productName))
         db.close()
     }
 
@@ -83,7 +83,7 @@ class DBHelper(context: Context) :
         val db = this.writableDatabase
         val contentValues = ContentValues()
         contentValues.put(KEY_NAME, product.productName)
-        db.delete(TABLE_NAME, "name=" + product.productName, null)
+        db.delete(TABLE_NAME, "name=?", arrayOf(product.productName))
         db.close()
     }
 }

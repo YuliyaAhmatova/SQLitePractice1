@@ -6,4 +6,8 @@
     <string name="weight">Вес</string>
     <string name="cost">Цена</string>
     <string name="name">Название</string>
+    <string name="change">Изменить</string>
+    <string name="input_name">Введите название</string>
+    <string name="input_weight">Введите вес</string>
+    <string name="input_cost">Введите цену</string>
 </resources>
