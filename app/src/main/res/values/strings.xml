@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SQLitePractice1</string>
+    <string name="save">Сохранить</string>
+    <string name="update">Обновить</string>
+    <string name="delete">Удалить</string>
+    <string name="weight">Вес</string>
+    <string name="cost">Цена</string>
+    <string name="name">Название</string>
+</resources>
